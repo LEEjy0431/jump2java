@@ -1,13 +1,12 @@
 package com.mysite.jump2java;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
+import java.util.*;
 
 public class Sample {
     public static void main(String[] args){
-        ArrayList<String> pitches = new ArrayList<>(Arrays.asList("138", "129", "142"));
-        pitches.sort(Comparator.reverseOrder());
-        System.out.println(pitches);
+        HashSet<String> set = new HashSet<>();
+        set.add("Jump");
+        set.addAll(Arrays.asList("2", "Java"));
+        System.out.println(set);
     }
 }
